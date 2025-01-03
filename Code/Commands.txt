@@ -1,0 +1,44 @@
+note : word monitor is added to the command in  case of using gdb client
+
+ex:
+monitor reset init --> gdb
+reset init ---> telnet
+
+
+1st command:
+target remote localhost:3333	
+	used to connect with the gdb server
+
+2nd command:
+reset init
+
+3rd command: 
+flash write_image erase "file_name"
+	download the code
+4th command: 
+reset halt
+	reset then halt
+5th command:
+resume
+
+6th command:
+halt
+	stop
+
+7th command:
+reset
+
+8th command:
+mdw address count
+	read memory
+
+9th command:
+mww address count  --- > physical mem (Sram)
+	write memory 
+
+10th command:
+bp address
+bp ---> list all breakpoint
+	h.w break points
+
+rbp all --> remove all breakpoints
