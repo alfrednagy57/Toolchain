@@ -55,7 +55,7 @@ make all.o
 - ![PXL_20240712_200756368](https://github.com/alfrednagy57/user-attachments/blob/main/Toolchain_repo_/Screenshot%202025-01-03%20215522.png?raw=true)
 
 ### Additional Debugging Commands
-For more debug options, refer to the `command.txt` file included in the project.
+For more debug options, refer to the `https://openocd.org/doc/html/General-Commands.html` file included in the project.
 
 ## File Structure
 - **Startup Code**: Configures the vector table, memory sections,copy .data from rom to ram, intialize .bss with zeros, and calls the application’s `main` function.
