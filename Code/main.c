@@ -63,23 +63,6 @@ void main(void)
 		{
 			x++;
 		}
-/*
-		GPIO_u8SetPinVal(Port_A,PIN_5,Pin_High);
-		
-		x = 0;
-
-		while(x<0xffU)
-		{
-			x++;
-		}
-*/
 	}
 
 }
-/*
-void Reset_Handler(void)
-{
-	int x = 5;
-	x+=5;
-}
-*/
