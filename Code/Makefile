@@ -39,6 +39,9 @@ GPIO_Program.o : GPIO_Program.c
 RCC_Program.o : RCC_Program.c
 	$(cc) $(CFLAGS) RCC_Program.c -o O_files/$@
 
+Syscall.o : syscalls.c
+	$(cc) $(CFLAGS) RCC_Program.c -o O_files/$@
+
 Gen_SymTab :
 	arm-none-eabi-nm elf_file/final.elf > Symbol_Table/SymbolTable.txt
 
@@ -53,8 +56,8 @@ all : final.elf
 bin : all Gen_SymTab
 	arm-none-eabi-objcopy -I elf32-littlearm -O binary elf_file/final.elf hex_file/user_app.bin
 
-load :
-	openocd -f D:/xpack-openocd-0.12.0-4/openocd/scripts/board/st_nucleo_f4.cfg
+openocd :
+	openocd -f E:/xpack-openocd-0.12.0-4/openocd/scripts/board/st_nucleo_f4.cfg
 
 GDB-Client :
 	arm-none-eabi-gdb

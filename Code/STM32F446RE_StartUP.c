@@ -18,6 +18,7 @@
 #define Flash_vtor   (*(volatile uint32_t * const)0xE000ED08)
 
 void main(void);
+//void __libc_init_array();
 
 void Reset_Handler				(void) __attribute__((naked,section(".startup_code")));
 void NMI_Handler				(void) __attribute__((weak,alias("Default_Handler")));

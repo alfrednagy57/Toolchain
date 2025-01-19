@@ -33,6 +33,12 @@ SECTIONS
 		_edata = . ;
 	} > SRAM AT > FLASH
 
+	.rodata :
+	{
+		*(.rodata)
+	} > FLASH
+	
+	
 	.bss :
 	{	
 		. = ALIGN(4);
@@ -41,10 +47,5 @@ SECTIONS
 		. = ALIGN(4);
 		_ebss = . ;
 	} > SRAM
-
-	.rodata :
-	{
-		*(.rodata)
-	} > FLASH
 
 }

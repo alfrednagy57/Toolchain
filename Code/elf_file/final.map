@@ -10,31 +10,31 @@ SRAM             0x20000000         0x00020000         xrw
 
 Linker script and memory map
 
-LOAD C:\Users\20102\AppData\Local\Temp\cc0WFJCt.o
-LOAD C:\Users\20102\AppData\Local\Temp\cc0We0Yf.o
-LOAD C:\Users\20102\AppData\Local\Temp\ccO2TML3.o
-LOAD C:\Users\20102\AppData\Local\Temp\ccw3TsnW.o
+LOAD C:\Users\Alfredo\AppData\Local\Temp\cceAffUU.o
+LOAD C:\Users\Alfredo\AppData\Local\Temp\ccQwrX1o.o
+LOAD C:\Users\Alfredo\AppData\Local\Temp\cc6jUJZU.o
+LOAD C:\Users\Alfredo\AppData\Local\Temp\cc0TbDTr.o
 
 .isr_vector     0x08000000      0x1c4
  *(.isr_vector)
- .isr_vector    0x08000000      0x1c4 C:\Users\20102\AppData\Local\Temp\ccO2TML3.o
+ .isr_vector    0x08000000      0x1c4 C:\Users\Alfredo\AppData\Local\Temp\cc6jUJZU.o
                 0x08000000                Vectors
 
 .text           0x080001c4      0x910
                 0x080001c4                        . = ALIGN (0x4)
                 0x080001c4                        _stext = .
  *(.MAIN_TEXT)
- .MAIN_TEXT     0x080001c4       0x88 C:\Users\20102\AppData\Local\Temp\ccw3TsnW.o
+ .MAIN_TEXT     0x080001c4       0x88 C:\Users\Alfredo\AppData\Local\Temp\cc0TbDTr.o
                 0x080001c4                main
  *(.text)
- .text          0x0800024c      0x47c C:\Users\20102\AppData\Local\Temp\cc0WFJCt.o
+ .text          0x0800024c      0x47c C:\Users\Alfredo\AppData\Local\Temp\cceAffUU.o
                 0x0800024c                GPIO_u8PinInit
                 0x080004cc                GPIO_u8SetPinVal
                 0x08000540                GPIO_u8TogglePinVal
                 0x08000594                GPIO_u8ReadPinVal
                 0x080005f0                GPIO_u8LckPin
                 0x08000680                GPIO_u8LckPort
- .text          0x080006c8      0x3b4 C:\Users\20102\AppData\Local\Temp\cc0We0Yf.o
+ .text          0x080006c8      0x3b4 C:\Users\Alfredo\AppData\Local\Temp\ccQwrX1o.o
                 0x080006c8                RCC_u8SetPllConfig
                 0x08000750                RCC_u8SetClkSrc
                 0x080007f4                RCC_SetClk_STATUS
@@ -48,7 +48,7 @@ LOAD C:\Users\20102\AppData\Local\Temp\ccw3TsnW.o
                 0x080009f8                RCC_AHB3_DIS_CLK
                 0x08000a24                RCC_APB1_DIS_CLK
                 0x08000a50                RCC_APB2_DIS_CLK
- .text          0x08000a7c        0x6 C:\Users\20102\AppData\Local\Temp\ccO2TML3.o
+ .text          0x08000a7c        0x6 C:\Users\Alfredo\AppData\Local\Temp\cc6jUJZU.o
                 0x08000a7c                RTC_Alarm_IRQHandler
                 0x08000a7c                EXTI2_IRQHandler
                 0x08000a7c                TIM8_CC_IRQHandler
@@ -145,10 +145,10 @@ LOAD C:\Users\20102\AppData\Local\Temp\ccw3TsnW.o
                 0x08000a7c                DMA2_Stream6_IRQHandler
                 0x08000a7c                SAI1_IRQHandler
                 0x08000a7c                DMA1_Stream3_IRQHandler
- .text          0x08000a82        0x0 C:\Users\20102\AppData\Local\Temp\ccw3TsnW.o
+ .text          0x08000a82        0x0 C:\Users\Alfredo\AppData\Local\Temp\cc0TbDTr.o
  *(.startup_code)
  *fill*         0x08000a82        0x2 
- .startup_code  0x08000a84       0x50 C:\Users\20102\AppData\Local\Temp\ccO2TML3.o
+ .startup_code  0x08000a84       0x50 C:\Users\Alfredo\AppData\Local\Temp\cc6jUJZU.o
                 0x08000a84                Reset_Handler
                 0x08000ad4                        . = ALIGN (0x4)
                 0x08000ad4                        _etext = .
@@ -166,56 +166,56 @@ LOAD C:\Users\20102\AppData\Local\Temp\ccw3TsnW.o
  .v4_bx         0x08000ad4        0x0 linker stubs
 
 .iplt           0x08000ad4        0x0
- .iplt          0x08000ad4        0x0 C:\Users\20102\AppData\Local\Temp\cc0WFJCt.o
+ .iplt          0x08000ad4        0x0 C:\Users\Alfredo\AppData\Local\Temp\cceAffUU.o
 
 .data           0x20000000       0x20 load address 0x08000ad4
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data)
- .data          0x20000000       0x20 C:\Users\20102\AppData\Local\Temp\cc0WFJCt.o
- .data          0x20000020        0x0 C:\Users\20102\AppData\Local\Temp\cc0We0Yf.o
- .data          0x20000020        0x0 C:\Users\20102\AppData\Local\Temp\ccO2TML3.o
- .data          0x20000020        0x0 C:\Users\20102\AppData\Local\Temp\ccw3TsnW.o
+ .data          0x20000000       0x20 C:\Users\Alfredo\AppData\Local\Temp\cceAffUU.o
+ .data          0x20000020        0x0 C:\Users\Alfredo\AppData\Local\Temp\ccQwrX1o.o
+ .data          0x20000020        0x0 C:\Users\Alfredo\AppData\Local\Temp\cc6jUJZU.o
+ .data          0x20000020        0x0 C:\Users\Alfredo\AppData\Local\Temp\cc0TbDTr.o
                 0x20000020                        . = ALIGN (0x4)
                 0x20000020                        _edata = .
 
 .igot.plt       0x20000020        0x0 load address 0x08000af4
- .igot.plt      0x20000020        0x0 C:\Users\20102\AppData\Local\Temp\cc0WFJCt.o
-
-.bss            0x20000020        0x0 load address 0x08000af4
-                0x20000020                        . = ALIGN (0x4)
-                0x20000020                        _sbss = .
- *(.bss)
- .bss           0x20000020        0x0 C:\Users\20102\AppData\Local\Temp\cc0WFJCt.o
- .bss           0x20000020        0x0 C:\Users\20102\AppData\Local\Temp\cc0We0Yf.o
- .bss           0x20000020        0x0 C:\Users\20102\AppData\Local\Temp\ccO2TML3.o
- .bss           0x20000020        0x0 C:\Users\20102\AppData\Local\Temp\ccw3TsnW.o
-                0x20000020                        . = ALIGN (0x4)
-                0x20000020                        _ebss = .
+ .igot.plt      0x20000020        0x0 C:\Users\Alfredo\AppData\Local\Temp\cceAffUU.o
 
 .rodata         0x08000af4        0xf
  *(.rodata)
- .rodata        0x08000af4        0xf C:\Users\20102\AppData\Local\Temp\ccw3TsnW.o
+ .rodata        0x08000af4        0xf C:\Users\Alfredo\AppData\Local\Temp\cc0TbDTr.o
+
+.rel.dyn        0x08000b04        0x0
+ .rel.iplt      0x08000b04        0x0 C:\Users\Alfredo\AppData\Local\Temp\cceAffUU.o
+
+.bss            0x20000020        0x0
+                0x20000020                        . = ALIGN (0x4)
+                0x20000020                        _sbss = .
+ *(.bss)
+ .bss           0x20000020        0x0 C:\Users\Alfredo\AppData\Local\Temp\cceAffUU.o
+ .bss           0x20000020        0x0 C:\Users\Alfredo\AppData\Local\Temp\ccQwrX1o.o
+ .bss           0x20000020        0x0 C:\Users\Alfredo\AppData\Local\Temp\cc6jUJZU.o
+ .bss           0x20000020        0x0 C:\Users\Alfredo\AppData\Local\Temp\cc0TbDTr.o
+                0x20000020                        . = ALIGN (0x4)
+                0x20000020                        _ebss = .
 OUTPUT(elf_file/final.elf elf32-littlearm)
 LOAD linker stubs
 
-.rel.dyn        0x08000b04        0x0
- .rel.iplt      0x08000b04        0x0 C:\Users\20102\AppData\Local\Temp\cc0WFJCt.o
-
 .comment        0x00000000       0x45
- .comment       0x00000000       0x45 C:\Users\20102\AppData\Local\Temp\cc0WFJCt.o
+ .comment       0x00000000       0x45 C:\Users\Alfredo\AppData\Local\Temp\cceAffUU.o
                                  0x46 (size before relaxing)
- .comment       0x00000045       0x46 C:\Users\20102\AppData\Local\Temp\cc0We0Yf.o
- .comment       0x00000045       0x46 C:\Users\20102\AppData\Local\Temp\ccO2TML3.o
- .comment       0x00000045       0x46 C:\Users\20102\AppData\Local\Temp\ccw3TsnW.o
+ .comment       0x00000045       0x46 C:\Users\Alfredo\AppData\Local\Temp\ccQwrX1o.o
+ .comment       0x00000045       0x46 C:\Users\Alfredo\AppData\Local\Temp\cc6jUJZU.o
+ .comment       0x00000045       0x46 C:\Users\Alfredo\AppData\Local\Temp\cc0TbDTr.o
 
 .ARM.attributes
                 0x00000000       0x2e
  .ARM.attributes
-                0x00000000       0x2e C:\Users\20102\AppData\Local\Temp\cc0WFJCt.o
+                0x00000000       0x2e C:\Users\Alfredo\AppData\Local\Temp\cceAffUU.o
  .ARM.attributes
-                0x0000002e       0x2e C:\Users\20102\AppData\Local\Temp\cc0We0Yf.o
+                0x0000002e       0x2e C:\Users\Alfredo\AppData\Local\Temp\ccQwrX1o.o
  .ARM.attributes
-                0x0000005c       0x2e C:\Users\20102\AppData\Local\Temp\ccO2TML3.o
+                0x0000005c       0x2e C:\Users\Alfredo\AppData\Local\Temp\cc6jUJZU.o
  .ARM.attributes
-                0x0000008a       0x2e C:\Users\20102\AppData\Local\Temp\ccw3TsnW.o
+                0x0000008a       0x2e C:\Users\Alfredo\AppData\Local\Temp\cc0TbDTr.o
